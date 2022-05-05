@@ -3,21 +3,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './MyItemShow.css'; 
 
-const ReviewItem = (props) => {
+const MyItemShow = (props) => {
     const {product, handleRemoveProduct} = props;
-    const {name, img, price, shipping, quantity} = product;
+    const {name, img, price, quantity} = product;
     return (
-        <div className='review-item'>
+        <div className='myItem'>
             <div>
                 <img src={img} alt="" />
             </div>
-            <div className="review-item-details-container">
-                <div className="review-item-details">
+            <div className="myItem-details-container">
+                <div className="myItem-details">
                     <p className="product-name" title={product.name}>
                         { name.length > 20 ? name.slice(0, 20) + '...': name }
                     </p>
                     <p>Price: <span className='orange-color'>${product.price}</span></p>
-                    <p><small>Shipping: ${product.shipping}</small></p>
+           
                     <p><small>Quantity: {product.quantity}</small></p>
                 </div>
                 <div className="delete-container">
@@ -30,4 +30,4 @@ const ReviewItem = (props) => {
     );
 };
 
-export default ReviewItem;
+export default MyItemShow;

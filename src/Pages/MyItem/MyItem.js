@@ -4,7 +4,7 @@ import useCart from '../../Hoock/useCart';
 import useProducts from '../../Hoock/useProducts';
 import { removeFromDb } from '../../utilities/db';
 import Cart from '../Cart/Cart';
-import ReviewItem from '../MyItemShow/MyItemShow';
+import MyItemShow from '../MyItemShow/MyItemShow';
 import PageTitle from '../Shared/PageTitle/PageTitle';
 import './MyItem.css';
 
@@ -24,11 +24,11 @@ const MyItem = () => {
             <PageTitle title="My Item"></PageTitle>
             <div className="review-items-container">
                 {
-                    cart.map(product => <ReviewItem
+                    cart.map(product => <MyItemShow
                         key={product._id}
                         product ={product}
                         handleRemoveProduct = {handleRemoveProduct}
-                    ></ReviewItem>)
+                    ></MyItemShow>)
                 }
             </div>
             <div className="cart-container">
