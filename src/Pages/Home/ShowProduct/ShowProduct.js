@@ -3,9 +3,9 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
-import './Service.css';
+import './ShowProduct.css';
 
-const Product = ({ service }) => {
+const ShowProduct = ({ service }) => {
     const { _id, name, img, description, price, quantity, supplier } = service;
 
     const navigate = useNavigate();
@@ -43,4 +43,4 @@ const Product = ({ service }) => {
     );
 };
 
-export default Product;
+export default ShowProduct;

@@ -1,28 +1,28 @@
 import React, { useEffect, useState } from 'react';
-import Service from '../Service/Service';
-import './Services.css';
+import ShowProduct from '../ShowProduct/ShowProduct';
+import './HomeProduct.css';
 
-const Services = () => {
+const HomeProduct = () => {
 
-    const [services, setServices] = useState([]);
+    const [products, setProducts] = useState([]);
 
     useEffect( ()=>{
         fetch('http://localhost:5000/Browsproducts')
         .then(res => res.json())
-        .then(data => setServices(data));
+        .then(data => setProducts(data));
     }, [])
 
     return (
-        <div id="services" className='container'>
+        <div id="products" className='container'>
             <div className="row">
-            <h1 className='text-primary text-center mt-5'> Our Services</h1>
+            <h1 className='text-primary text-center mt-5 mb-5'>Featured Product </h1>
             <div className="services-container">
             {
-                services.map(service => <Service
+                products.map(service => <ShowProduct
                     key={service.id}
                     service={service}
                 >
-                </Service>)
+                </ShowProduct>)
             }
             </div>
             </div>
@@ -30,4 +30,4 @@ const Services = () => {
     );
 };
 
-export default Services;
+export default HomeProduct;

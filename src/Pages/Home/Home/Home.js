@@ -2,7 +2,7 @@ import React from 'react';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
 import Banner from '../Banner/Banner';
 import Experts from '../Experts/Experts';
-import Services from '../Services/Services';
+import HomeProduct from '../HomeProduct/HomeProduct';
 import Collection from '../Collection/Collection';
 import './Home.css'
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
             <Banner></Banner>
             <Collection></Collection>
 
-            <Services></Services>
+            <HomeProduct></HomeProduct>
         </>
     );
 };
