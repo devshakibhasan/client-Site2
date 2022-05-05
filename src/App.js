@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Pages/Blogs/Blogs';
-import Orders from './Pages/Orders/Orders';
+
 import AddProduct from './Pages/AddProducts/AddProducts';
 import ManageProduct from './Pages/ManageProduct/ManageProduct';
 import Checkout from './Pages/Checkout/Checkout/Checkout';
@@ -15,7 +15,9 @@ import ProductDetail from './Pages/ProductDetail/ProductDetail';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/NotFound/NotFound';
-import Shop from './Pages/Shop/Shop';
+
+import AddItem from './Pages/AddItem/AddItem';
+import MyItem from './Pages/MyItem/MyItem';
 
 
 function App() {
@@ -28,16 +30,16 @@ function App() {
         <Route path="/home" element={<Home></Home>}></Route>
 
 
-        <Route path='/shop' element={
+        <Route path='/addItem' element={
           <RequireAuth>
-            <Shop></Shop>
+         <AddItem></AddItem>
           </RequireAuth>
         }>
         </Route>
 
-        <Route path='/orders' element={
+        <Route path='/myItem' element={
           <RequireAuth>
-            <Orders></Orders>
+            <MyItem></MyItem>
           </RequireAuth>
         }>
         </Route>

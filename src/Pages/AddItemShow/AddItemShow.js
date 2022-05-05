@@ -1,15 +1,17 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import './Product.css';
+import './AddItemShow.css';
 import { Card } from 'react-bootstrap';
+import PageTitle from '../Shared/PageTitle/PageTitle';
 
-const Product = ({ product, handleAddToCart }) => {
+const AddItemShow = ({ product, handleAddToCart }) => {
     // const {product, handleAddToCart} = props;
     const { name, img, seller, price, description,quantity } = product;
 
     return (
         <div className='service'>
+            <PageTitle title="Add Item"></PageTitle>
             {/* <img src={img} alt=""></img>
             <div className='product-info'>
                 <p className='product-name'>{name}</p>
@@ -52,4 +54,4 @@ const Product = ({ product, handleAddToCart }) => {
     );
 };
 
-export default Product;
+export default AddItemShow;

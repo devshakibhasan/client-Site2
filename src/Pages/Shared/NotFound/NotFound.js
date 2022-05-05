@@ -6,7 +6,7 @@ const NotFound = () => {
     return (
         <div>
                <h2 className='text-primary text-center'>Page is sleeping</h2>
-            <Container className='Notcontainer'>
+            <Container className='Notfound'>
          
             <img  src={PageNotFound} alt="" />
             </Container>

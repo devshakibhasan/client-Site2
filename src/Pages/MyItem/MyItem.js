@@ -5,9 +5,10 @@ import useProducts from '../../Hoock/useProducts';
 import { removeFromDb } from '../../utilities/db';
 import Cart from '../Cart/Cart';
 import ReviewItem from '../ReviewItem/ReviewItem';
-import './Orders.css';
+import PageTitle from '../Shared/PageTitle/PageTitle';
+import './MyItem.css';
 
-const Orders = () => {
+const MyItem = () => {
     const [products, setProducts] = useProducts();
     const [cart, setCart] = useCart(products);
     const navigate = useNavigate();
@@ -20,6 +21,7 @@ const Orders = () => {
     
     return (
         <div className='shop-container'>
+            <PageTitle title="My Item"></PageTitle>
             <div className="review-items-container">
                 {
                     cart.map(product => <ReviewItem
@@ -38,4 +40,4 @@ const Orders = () => {
     );
 };
 
-export default Orders;
+export default MyItem;

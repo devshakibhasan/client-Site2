@@ -1,7 +1,7 @@
-.Notcontainer  {
+.Notfound  {
     display: flex;
     justify-content: center;
 }
-.Notcontainer img {
+.Notfound img {
     height: 500px;
 }

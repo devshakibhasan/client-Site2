@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import useProduct from '../../Hoock/useProduct';
 import { addToDb, getStoredCart } from '../../utilities/db';
 import Cart from '../Cart/Cart';
-import Product from '../Product/Product';
-import './Shop.css';
+import Product from '../AddItemShow/AddItemShow';
+import PageTitle from '../Shared/PageTitle/PageTitle';
+import './AddItem.css';
 
-const Shop = () => {
+const AddItem = () => {
     const [products, setProduct] = useProduct();
     const [cart, setCart] = useState([]);
 
@@ -43,7 +44,9 @@ const Shop = () => {
     }
 
     return (
+        
         <div className='shop-container'>
+            <PageTitle title="Add Item"></PageTitle>
               <div className="cart-container2">
                 <Cart cart={cart}>
                     <Link to="/orders">
@@ -71,4 +74,4 @@ const Shop = () => {
     );
 };
 
-export default Shop;
+export default AddItem;

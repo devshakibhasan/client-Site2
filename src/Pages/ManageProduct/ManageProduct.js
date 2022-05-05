@@ -3,13 +3,14 @@ import React, { useEffect, useState } from 'react';
 import { Card, Button, Row, Col } from 'react-bootstrap';
 import useProducts from '../../Hoock/useProducts';
 import './ManageProduct.css'
-import {  useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import PageTitle from '../Shared/PageTitle/PageTitle';
 const ManageProduct = () => {
     const [products, setproducts] = useProducts();
 
     const navigate = useNavigate();
 
-    const navigateToAddProduct = ()=> {
+    const navigateToAddProduct = () => {
         navigate(`/addproduct`);
     }
 
@@ -30,8 +31,8 @@ const ManageProduct = () => {
     }
     return (
         <div>
+            <PageTitle title="Manage Product"></PageTitle>
 
-      
             {
                 // products.map(products => <div key={products._id}>
                 //     <h4>{products.name}</h4>
