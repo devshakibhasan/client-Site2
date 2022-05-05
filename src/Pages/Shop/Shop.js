@@ -44,6 +44,13 @@ const Shop = () => {
 
     return (
         <div className='shop-container'>
+              <div className="cart-container2">
+                <Cart cart={cart}>
+                    <Link to="/orders">
+                        <button>Review Order </button>
+                    </Link>
+                </Cart>
+            </div>
             <div className="products-container">
                 {
                     products.map(product=><Product 

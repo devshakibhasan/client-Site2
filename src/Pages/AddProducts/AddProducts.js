@@ -5,6 +5,7 @@ import './AddProducts.css'
 const AddProduct = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
+     
         console.log(data);
         const url = `http://localhost:5000/products`;
 
@@ -17,7 +18,9 @@ const AddProduct = () => {
         })
             .then(res => res.json())
             .then(result => {
-                console.log(result);
+                console.log('success', data);
+                alert('Product added successfully!!!');
+                data.target.reset();
             })
     };
 

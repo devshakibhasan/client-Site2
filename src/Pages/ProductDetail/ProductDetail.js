@@ -34,36 +34,36 @@ const ProductDetails = () => {
             .then(res => res.json())
             .then(data => {
                 console.log('success', data);
-                alert('users added successfully!!!');
+                alert('Prodct Update successfully!!!');
                 event.target.reset();
             })
 
 
     }
 
-    const handleDeleteQuantity = (event) => {
-        event.preventDefault();
-        const quantity = event.target.quantity.value;
+    // const handleDeleteQuantity = (event) => {
+    //     event.preventDefault();
+    //     const quantity = event.target.quantity.value;
 
-        const updatedProduct = { quantity };
+    //     const updatedProduct = { quantity };
 
-        // send data to the server
-        const url = `http://localhost:5000/Browsproducts/${productId}`;
-        fetch(url, {
-            method: 'PUT',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(updatedProduct)
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log('success', data);
-                alert('Product update successfully!!!');
-                event.target.reset();
-            })
-        console.log('succes');
-    }
+    //     // send data to the server
+    //     const url = `http://localhost:5000/Browsproducts/${productId}`;
+    //     fetch(url, {
+    //         method: 'PUT',
+    //         headers: {
+    //             'content-type': 'application/json'
+    //         },
+    //         body: JSON.stringify(updatedProduct)
+    //     })
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             console.log('success', data);
+    //             alert('Product update successfully!!!');
+    //             event.target.reset();
+    //         })
+    //     console.log('succes');
+    // }
 
 
 
