@@ -4,7 +4,7 @@ import useCart from '../../Hoock/useCart';
 import useProducts from '../../Hoock/useProducts';
 import { removeFromDb } from '../../utilities/db';
 import Cart from '../Cart/Cart';
-import ReviewItem from '../ReviewItem/ReviewItem';
+import ReviewItem from '../MyItemShow/MyItemShow';
 import PageTitle from '../Shared/PageTitle/PageTitle';
 import './MyItem.css';
 

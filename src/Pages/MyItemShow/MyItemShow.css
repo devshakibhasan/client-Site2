@@ -53,8 +53,9 @@
         border-radius: 8px;
         padding: 8px;
         margin-top: 21px;
-        width: 271px;
+        width: 301px;
         display: flex;
+        margin-left: 90px;
         
     }
     .cart-container {
