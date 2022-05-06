@@ -17,10 +17,10 @@ const Footer = () => {
                         <div className='column'>
                             <h3>Be Stock</h3>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                We are e inventory based production. We store products that we need and restock them.
                             </p>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Mainly we work on electronic products. Later on more products will be included in our warehouse.
                             </p>
                         </div>
                     </Col>

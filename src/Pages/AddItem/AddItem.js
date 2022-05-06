@@ -49,7 +49,7 @@ const AddItem = () => {
             <PageTitle title="Add Item"></PageTitle>
               <div className="cart-container2">
                 <Cart cart={cart}>
-                    <Link to="/orders">
+                    <Link to="/myItem">
                         <button>Review Order </button>
                     </Link>
                 </Cart>
@@ -65,7 +65,7 @@ const AddItem = () => {
             </div>
             <div className="cart-container">
                 <Cart cart={cart}>
-                    <Link to="/orders">
+                    <Link to="/myItem">
                         <button>Review Order </button>
                     </Link>
                 </Cart>

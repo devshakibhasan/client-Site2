@@ -1,4 +1,7 @@
 
+ .Blogs-container{
+    margin-top: 50px;   
+}
 .blogs  .column{
     border: 1px solid green;
     margin: 50px;

@@ -16,7 +16,7 @@ const HomeProduct = () => {
         <div id="products" className='container'>
             <div className="row">
             <h1 className='text-primary text-center mt-5 mb-5'>Featured Product </h1>
-            <div className="services-container">
+            <div className="products-container">
             {
                 products.map(service => <ShowProduct
                     key={service.id}

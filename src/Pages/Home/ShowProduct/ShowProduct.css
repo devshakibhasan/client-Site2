@@ -19,7 +19,7 @@
     border-radius: 10px;
     text-align: center;
     width: 370px;
-    margin-left: 50px;
+  
 
 }
 .productCard1:hover {
@@ -64,4 +64,20 @@
 .card-img{
     height: 200px;
     width: 90%;
+}
+
+@media only screen and (max-width:576px) {
+    .productCard1 {
+      
+        margin-left: 10px;
+    
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .productCard1 {
+      
+        margin-left: 50px;
+    
+    }
 }

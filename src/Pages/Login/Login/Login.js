@@ -63,7 +63,7 @@ const Login = () => {
 
     return (
         <section  className='addProduct register'>
-          <div className='w-50 mx-auto '>
+          <div className='register3 mx-auto '>
                 <div className='container w-50 mx-auto register'>
                     <PageTitle title="Login"></PageTitle>
                     <h2 className='text-primary text-center mt-2'>Please Login</h2>

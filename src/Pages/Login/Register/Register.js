@@ -46,11 +46,11 @@ const Register = () => {
     return (
 
 
-        <section  className='addProduct register'>
-          <div className='w-50 mx-auto '>
-          <div className='register-form register'>
+        <section  className='addProduct register '>
+          <div className=' mx-auto register3'>
+          <div className='register-form '>
                 <h2 style={{ textAlign: 'center' }}>Please Register</h2>
-                <form onSubmit={handleRegister}>
+                <form onSubmit={handleRegister} className='register4'>
                     <input type="text" name="name" id="" placeholder='Your Name' />
 
                     <input type="email" name="email" id="" placeholder='Email Address' required />
