@@ -15,12 +15,9 @@ const Footer = () => {
                 <Row className='row'>
                     <Col>
                         <div className='column'>
-                            <h3>Be Stock</h3>
+                            <h3>About Us</h3>
                             <p>
                                 We are e inventory based production. We store products that we need and restock them.
-                            </p>
-                            <p>
-                                Mainly we work on electronic products. Later on more products will be included in our warehouse.
                             </p>
                         </div>
                     </Col>

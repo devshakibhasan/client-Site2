@@ -12,6 +12,7 @@ const Home = () => {
             <Banner></Banner>
             <Collection></Collection>
             <HomeProduct></HomeProduct>
+            
             <WareHouseSystem></WareHouseSystem>
         </>
     );

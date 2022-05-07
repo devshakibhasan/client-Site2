@@ -39,6 +39,8 @@ const ShowProduct = ({ service }) => {
                     <button onClick={() => navigateToProductDetail(_id)} className='btn btn-primary'>Update</button>
                 </Card.Body>
             </Card>
+
+            
         </div>
     );
 };

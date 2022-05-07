@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 const ProductDetails = () => {
     const { productId } = useParams();
     const [product, SetProduct] = useState({});
+    const [num,UpNum] = useState(0);
 
     useEffect(() => {
         const url = `http://localhost:5000/Browsproducts/${productId}`;
@@ -22,9 +23,30 @@ const ProductDetails = () => {
     const handleUpdateQuantity = event => {
         event.preventDefault();
         const quantity = event.target.quantity.value;
+        console.log(quantity);
+    
 
+
+
+        // const inNum = () => {
+        //     UpNum(quantity+1);
+        // }
+    //    const adbc = (Number(quantity)+Number(product.quantity)).toString();
+    // //    const updateProducts = (adbc + def).toString();
+    //    console.log( adbc );
+
+     
+        // const updatedProducts2 = updateProducts.toString();
+        // console.log(updatedProducts2);
+        // const upp = parseInt(updatedProduct);
+        // console.log(upp);
+        // const updatedProduct2 = upp + product.quantity;
+        // console.log(updatedProduct2);
+        // const updatedProduct3 = {updatedProduct2};
 
         const updatedProduct = { quantity };
+        console.log(updatedProduct);
+
         const url = `http://localhost:5000/Browsproducts/${productId}`;
         fetch(url, {
             method: 'PUT',
@@ -137,7 +159,7 @@ const ProductDetails = () => {
                                         </div>
 
                                         <div class="text-center">
-                                            <input type="submit" value='Update' className='btn btn-primary'/>
+                                            <input type="submit" value='Update' className='btn btn-primary' />
                                         </div>
                                     </form>
 
@@ -149,12 +171,12 @@ const ProductDetails = () => {
                                 <div class="card-body">
 
                                     <form className='d-flex flex-column'>
-                                        <h2 class="text-center font-up font-bold py-4 white-text">Manage Inventories</h2>
+                                        <h2 class="text-center font-up font-bold py-4 white-text">Manage Product</h2>
 
-                                    
+
 
                                         <div class="text-center">
-                                        <button onClick={() => navigateToProductDetail()} className='btn btn-primary'>Manage</button>
+                                            <button onClick={() => navigateToProductDetail()} className='btn btn-primary'>Manage</button>
                                         </div>
                                     </form>
 

@@ -8,12 +8,12 @@ class WareHouseSystem extends Component {
                 <Container>
                     <Row className='wareshouse-system'>
                         <Col className='left-content'>
-                            <h4>Intelligent Warehousing System</h4>
+                            <h4>Our Warehousing System</h4>
                             <hr />
                             <Row className='box-content'>
                                 <Col>
                                     <div className='div'>
-                                        <h4>Intelligent Storage</h4>
+                                        <h4>Our Storage</h4>
                                         <ul>
                                             <li>  <p>Automated storage</p></li>
                                             <li> <p>Dense storage</p></li>
@@ -25,7 +25,7 @@ class WareHouseSystem extends Component {
                                 </Col>
                                 <Col>
                                     <div className='div'>
-                                        <h4>Intelligent Handeling</h4>
+                                        <h4>Our Handeling</h4>
                                         <ul>
                                             <li>  <p>AGV / IGV flexible handeling</p></li>
                                             <li> <p>Self loading truck</p></li>
@@ -37,7 +37,7 @@ class WareHouseSystem extends Component {
                                 <Col>
                                     <div className='div2'>
 
-                                        <h4>Intelligent Sorting</h4>
+                                        <h4>Our Sorting</h4>
                                         <ul>
                                             <li>  <p>Crose-belt auto-sorting</p></li>
                                             <li> <p>Pivot wheel sorting</p></li>
@@ -48,7 +48,7 @@ class WareHouseSystem extends Component {
                                 </Col>
                                 <Col>
                                     <div className='div2'>
-                                        <h4>Intelligent picking</h4>
+                                        <h4>Our picking</h4>
                                         <ul>
                                             <li>  <p>Storage and sorting</p></li>
                                             <li> <p>Goods to person picking</p></li>
@@ -66,7 +66,7 @@ class WareHouseSystem extends Component {
                             <ul>
                                 <li>
                                     <p>
-                                    We are e inventory based production.
+                                    We are a inventory based production.
                                     </p>
                                 </li>
 
