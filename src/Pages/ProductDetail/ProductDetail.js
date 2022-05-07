@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 import { useForm } from "react-hook-form";
+import { useNavigate } from 'react-router-dom';
+
 const ProductDetails = () => {
     const { productId } = useParams();
     const [product, SetProduct] = useState({});
@@ -66,6 +68,11 @@ const ProductDetails = () => {
     // }
 
 
+    const navigate = useNavigate();
+    const navigateToProductDetail = () => {
+        navigate(`/manageproduct`);
+    }
+
 
     return (
         <div>
@@ -115,38 +122,46 @@ const ProductDetails = () => {
                         </Card.Body>
                     </Card>
 
-                    <div class=" col-lg-8 col-md-12 col-sm-12 col-12 mb-4 ">
-                        <div class="card ripe-malinka-gradient form-white">
-                            <div class="card-body">
+                    <div>
+                        <div class=" col-lg-8 col-md-12 col-sm-12 col-12 mb-4 ">
+                            <div class="card ripe-malinka-gradient form-white">
+                                <div class="card-body">
 
-                                <form className='d-flex flex-column' onSubmit={handleUpdateQuantity}>
-                                    <h2 class="text-center font-up font-bold py-4 white-text">Update Product</h2>
+                                    <form className='d-flex flex-column' onSubmit={handleUpdateQuantity}>
+                                        <h2 class="text-center font-up font-bold py-4 white-text">Update Product</h2>
 
-                                    <div class="md-form">
-                                        <i class="fa fa-envelope prefix white-text"></i>
-                                        <input id="orangeForm-email2" class="form-control" placeholder='Quantity' type='number' {...register("quantity",)} />
-                                        <label for="orangeForm-email2"></label>
-                                    </div>
+                                        <div class="md-form">
+                                            <i class="fa fa-envelope prefix white-text"></i>
+                                            <input id="orangeForm-email2" class="form-control" placeholder='Quantity' type='number' {...register("quantity",)} />
+                                            <label for="orangeForm-email2"></label>
+                                        </div>
 
-                                    <div class="text-center">
-                                        <input type="submit" value='Update' />
-                                    </div>
-                                </form>
+                                        <div class="text-center">
+                                            <input type="submit" value='Update' className='btn btn-primary'/>
+                                        </div>
+                                    </form>
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-8 col-md-12 col-sm-12 col-12 mb-4 ">
+                            <div class="card ripe-malinka-gradient form-white">
+                                <div class="card-body">
+
+                                    <form className='d-flex flex-column'>
+                                        <h2 class="text-center font-up font-bold py-4 white-text">Manage Inventories</h2>
+
+                                    
+
+                                        <div class="text-center">
+                                        <button onClick={() => navigateToProductDetail()} className='btn btn-primary'>Manage</button>
+                                        </div>
+                                    </form>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
 
                 </div>
             </div>

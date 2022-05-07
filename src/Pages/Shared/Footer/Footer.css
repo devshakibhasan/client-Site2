@@ -11,18 +11,6 @@
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
 }
-@media only screen and (max-width:736px) {
-    .footer .column {
-        margin-right: 100px;
-    }
-}
-
-
-    @media only screen and (min-width: 737px) and (max-width: 1198px) {
-    .products-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
 
 .footer .row {
@@ -128,4 +116,17 @@ font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width:736px) {
+    .footer .column {
+        margin-right: 100px;
+    }
+}
+
+
+    @media only screen and (min-width: 737px) and (max-width: 1198px) {
+    .products-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

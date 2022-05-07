@@ -13,9 +13,13 @@ const MyItem = () => {
     const [cart, setCart] = useCart(products);
     const navigate = useNavigate();
     const handleRemoveProduct = product =>{
-        const rest = cart.filter(pd => pd._id !== product._id);
-        setCart(rest);
-        removeFromDb(product._id);
+        const proceed = window.confirm('Are you sure delete a Product?')
+        if(proceed){
+            const rest = cart.filter(pd => pd._id !== product._id);
+            setCart(rest);
+            removeFromDb(product._id);
+        }
+       
     }
 
     
